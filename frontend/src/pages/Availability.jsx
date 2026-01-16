@@ -42,7 +42,7 @@ export default function Availability() {
   useEffect(() => {
     const loadData = async () => {
       try {
-        const response = await fetch("https://calendly-f18f.onrender.com/api/events");
+        const response = await fetch("https://calendly-f18f.onrender.comapi/events");
         const events = await response.json();
         if (events && events.length > 0) {
           const id = events[0].id;
