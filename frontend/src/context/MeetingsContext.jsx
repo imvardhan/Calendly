@@ -10,7 +10,7 @@ export function MeetingsProvider({ children }) {
   useEffect(() => {
     const loadMeetings = async () => {
       try {
-        const response = await fetch("http://localhost:5000/api/bookings/all");
+        const response = await fetch("https://calendly-f18f.onrender.com/api/bookings/all");
         if (response.ok) {
           const data = await response.json();
           // Convert backend format to frontend format

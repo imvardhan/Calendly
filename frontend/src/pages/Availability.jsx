@@ -42,7 +42,7 @@ export default function Availability() {
   useEffect(() => {
     const loadData = async () => {
       try {
-        const response = await fetch("http://localhost:5000/api/events");
+        const response = await fetch("https://calendly-f18f.onrender.com/api/events");
         const events = await response.json();
         if (events && events.length > 0) {
           const id = events[0].id;
@@ -65,7 +65,7 @@ export default function Availability() {
   const loadAvailability = async (id) => {
     try {
       const response = await fetch(
-        `http://localhost:5000/api/availability/${id}/settings`
+        `https://calendly-f18f.onrender.com/api/availability/${id}/settings`
       );
       if (response.ok) {
         const data = await response.json();
@@ -132,7 +132,7 @@ export default function Availability() {
 
     try {
       const response = await fetch(
-        `http://localhost:5000/api/availability/${eventTypeId}`,
+        `https://calendly-f18f.onrender.com/api/availability/${eventTypeId}`,
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },

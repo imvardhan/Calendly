@@ -16,7 +16,7 @@ export default function TimeSlots({ event, selectedDate, onSelectTime }) {
       try {
         // Fetch available slots from backend
         const response = await fetch(
-          `http://localhost:5000/api/availability/${event.id}?date=${selectedDate}`
+          `https://calendly-f18f.onrender.com/api/availability/${event.id}?date=${selectedDate}`
         );
         
         if (!response.ok) {

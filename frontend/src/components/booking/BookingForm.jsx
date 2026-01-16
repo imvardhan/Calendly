@@ -61,7 +61,7 @@ export default function BookingForm({ event, selectedDate, selectedTime }) {
       console.log("Submitting booking:", bookingData);
 
       // Create booking via backend
-      const response = await fetch("http://localhost:5000/api/bookings", {
+      const response = await fetch("https://calendly-f18f.onrender.com//api/bookings", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(bookingData),

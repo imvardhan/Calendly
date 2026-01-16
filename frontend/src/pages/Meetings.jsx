@@ -91,7 +91,7 @@ export default function Meetings() {
       const endTime = `${String(endHours).padStart(2, "0")}:${String(endMins).padStart(2, "0")}`;
 
       const response = await fetch(
-        `http://localhost:5000/api/bookings/${selectedMeeting.id}`,
+        `https://calendly-f18f.onrender.com/api/bookings/${selectedMeeting.id}`,
         {
           method: "PUT",
           headers: { "Content-Type": "application/json" },
