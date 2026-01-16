@@ -1,6 +1,6 @@
-const BASE_URL = "http://localhost:5000/api/events";
-const BOOKINGS_URL = "http://localhost:5000/api/bookings";
-const AVAILABILITY_URL = "http://localhost:5000/api/availability";
+const BASE_URL = "https://calendly-f18f.onrender.com/api/events";
+const BOOKINGS_URL = "https://calendly-f18f.onrender.com/api/bookings";
+const AVAILABILITY_URL = "https://calendly-f18f.onrender.com/api/availability";
 
 // ============ EVENTS ============
 export async function fetchEvents() {
